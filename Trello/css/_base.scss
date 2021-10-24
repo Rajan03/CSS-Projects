@@ -1,0 +1,62 @@
+:root {
+  // COLORS
+  --Primary: #eb2f64;
+  --Primary-light: #ff3366;
+  --Primary-dark: #ba265d;
+
+  --Grey-light-1: #faf9f9;
+  --Grey-light-2: #f4f2f2;
+  --Grey-light-3: #f0eeee;
+  --Grey-light-4: #ccc;
+
+  --Grey-dark-1: #333;
+  --Grey-dark-2: #777;
+  --Grey-dark-3: #999;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --box-shadow-dark: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+  --box-shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.07);
+  --border-bottom: 0.1rem solid var(--Grey-light-2);
+}
+
+$bp-largest: 75em; // = 1200px
+$bp-larger: 68.75em; // = 1100px
+$bp-large: 56.25em; // = 900px
+$bp-small: 37.5em; // = 600px
+$bp-smallest: 31.25em; // = 500px
+$bp-least: 28.125em; // = 450px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (max-width: $bp-larger) {
+    font-size: 53%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--Grey-dark-1);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--Primary-light),
+    var(--Primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
